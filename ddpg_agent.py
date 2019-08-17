@@ -126,6 +126,7 @@ class Agent():
         self.mu = mu
 
         self.update_every_x = 0
+        self.noise_getter_mean = 0.0
 
         # The Actor
         ###########
@@ -193,6 +194,7 @@ class Agent():
         if add_noise:
             noise_ = self.noise.sample()
             #print (action)
+            self.noise_getter_mean = np.mean(noise_)
             action += self.epsilon * noise_
             #print (action)
             #print ("------------------------------------------")
@@ -204,6 +206,12 @@ class Agent():
         getter function: used to monitor epsilon
         """
         return self.epsilon
+
+    def get_noise_mean(self):
+        """
+        getter function: used to monitor the noise
+        """
+        return self.noise_getter_mean
 
     def learn(self, experiences):
         """
