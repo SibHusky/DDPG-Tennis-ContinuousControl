@@ -7,6 +7,7 @@ The basics of this algorithm is described in https://arxiv.org/pdf/1509.02971.pd
 Nearly everything is used from my other DDPG repository: https://github.com/SibHusky/DDPG-Reacher-ContinuousControl
 The main thing was to tune the hyperparameters.
 
+Hyperparameters
 ---
 MU = 0.0  
 THETA = 0.175  
