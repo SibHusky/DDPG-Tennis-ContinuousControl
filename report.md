@@ -52,3 +52,29 @@ The critic:
 
 
 ## Result and plots
+
+Episode 100	  Average100 Score: 0.01	Score: 0.10  
+Episode 200  	Average100 Score: 0.01	Score: 0.00  
+Episode 300  	Average100 Score: 0.01	Score: 0.00  
+Episode 400  	Average100 Score: 0.00	Score: 0.00  
+Episode 500  	Average100 Score: 0.00	Score: 0.00  
+Episode 600  	Average100 Score: 0.01	Score: 0.00  
+Episode 700	  Average100 Score: 0.01	Score: 0.00  
+Episode 800  	Average100 Score: 0.00	Score: 0.00  
+Episode 900	  Average100 Score: 0.00	Score: 0.00  
+Episode 1000	Average100 Score: 0.02	Score: 0.10  
+Episode 1100	Average100 Score: 0.06	Score: 0.00  
+Episode 1200	Average100 Score: 0.04	Score: 0.10  
+Episode 1300	Average100 Score: 0.10	Score: 0.09  
+Episode 1400	Average100 Score: 0.11	Score: 0.20  
+Episode 1500	Average100 Score: 0.15	Score: 0.20  
+Episode 1559	Average100 Score: 0.51	Score: 2.10  
+Environment solved! 	Average100 Score: 0.51	Episodes: 1559  
+
+| <img src="https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/media/final_result_plot.png" width="391" height="262" /> |
+|---|
+
+## Ideas for the future work
+- intensive hyperparameter tuning
+- tune the neural network
+
