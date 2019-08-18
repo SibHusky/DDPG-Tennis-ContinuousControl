@@ -1,6 +1,8 @@
 # DDPG-Tennis-ContinuousControl
 Agent for solving the Unity "Tennis" Environment 
 
+<img src="https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/media/tennis_trained.gif" width="480" height="270" />
+
 ## Introduction
 This is all about a Reinforcement Learning problem. Two agents play tennis. Each of them controls a racket to bounce the ball over the net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. This means they play not against each other.
 To solve this environment the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). That means:
