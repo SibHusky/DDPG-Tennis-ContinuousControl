@@ -7,6 +7,22 @@ The basics of this algorithm is described in https://arxiv.org/pdf/1509.02971.pd
 Nearly everything is used from my other DDPG repository: https://github.com/SibHusky/DDPG-Reacher-ContinuousControl
 The main thing was to tune the hyperparameters.
 
+In detail:
+The DDPG algorithm includes an actor and a critic. Both are DNNs (defined in https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/actor_critic_DNN.py). The actor (policy-based) estimates the action-vector. The activation function of the actor DNN is tanh, since we want to predict actions for a continuous space.
+The critic (value-based) is used to approximate the maximizer over the Q values of the next state.
+
+In the learning process a target_actor is used to estimate the action-vector of the next state and a target_critic is used to estimate the Q value of the action-vector of the next state and the next state (similar to DQN: the use of a target_network stabilize training). The learning process only updates the actor and the critic, but neither the target_actor nor the target_critic.
+
+In this notebook I use a soft update, this means the weights of the actor are blended in the weights of the target_actor (same for critic). This happened at every learning step, in contrast to the "normal" update where the targets are updated by copying the weights of the actor to the target_actor (same for critic) and that frequently (e.g. every 1000 lerning steps).
+With the use of the soft update you'll get faster convergence.
+
+For the exploration component a noise is generated and added up to the action-vector when acting with the environment, but not during the learning process. 
+Therefore the Ornstein-Uhlenbeck-process is used (https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process).
+
+Additional I added the parameter epsilon which reduces the noise as learning is proceeding. 
+The idea behind this: reduce exploration as the agent gets better.
+
+
 Hyperparameters
 ---
 MU = 0.0  
