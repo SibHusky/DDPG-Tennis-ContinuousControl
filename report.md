@@ -74,6 +74,11 @@ Environment solved! 	Average100 Score: 0.51	Episodes: 1559
 | <img src="https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/media/final_result_plot.png" width="391" height="262" /> |
 |---|
 
+| <img src="https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/media/tennis_untrained.gif" width="480" height="270" /> | <img src="https://github.com/SibHusky/DDPG-Tennis-ContinuousControl/blob/master/media/tennis_trained.gif" width="480" height="270" />  |
+|---|---|
+| Untrained agents | Trained agents |
+
+
 ## Ideas for the future work
 - intensive hyperparameter tuning
 - tune the neural network
