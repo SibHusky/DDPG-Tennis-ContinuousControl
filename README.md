@@ -28,5 +28,5 @@ The environment is an adpated version of https://www.youtube.com/watch?v=IA2EcOP
 More informations: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis
 
 ## Getting started
-Follow the instruction in the jupyter notebook Continuous_Control.ipynb.
+Follow the instruction in the jupyter notebook Tennis.ipynb.
 It also contains a cell that discribes the action and state space.
