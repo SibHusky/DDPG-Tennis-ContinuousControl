@@ -82,4 +82,5 @@ Environment solved! 	Average100 Score: 0.51	Episodes: 1559
 ## Ideas for the future work
 - intensive hyperparameter tuning
 - tune the neural network
-
+- use prioritized experience buffer
+- use Multi-Agent DDPG
