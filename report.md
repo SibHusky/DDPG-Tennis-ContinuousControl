@@ -8,19 +8,22 @@ Nearly everything is used from my other DDPG repository: https://github.com/SibH
 The main thing was to tune the hyperparameters.
 
 ---
-EPSILON = 1.0  (strictly speaking no hyperparameter, hard coded)  
-EPSILON_END = 0.001  (strictly speaking no hyperparameter, hard coded)  
-EPSILON_DECAY = 0.99999    
-  
-buffer size = 1000000  
-batch_size = 265  
-Gamma = 0.99  
-Tau = 0.001  
+MU = 0.0  
+THETA = 0.175  
+SIGMA = 0.01  
 
-UPDATE_EVERY = 100 (Learning frequence, in that case: the learning process runs every 100 timesteps)  
+EPSILON = 1.0   
+EPSILON_END = 0.001  (strictly speaking no hyperparameter, hard coded)  
+EPSILON_DECAY = 0.995  
+  
+BUFFER_SIZE = 5e5   
+BATCH_SIZE = 265  
+GAMMA = 0.99  
+TAU = 0.001  
+
+UPDATE_EVERY = 20 (Learning frequence, in that case: the learning process runs every 100 timesteps)  
 UPDATE_TIMES = 10 (how often the weights are updated by the learning process)  
-(The learning starts when the memory buffer is half-full)  
- 
+START_LEARNING = 40 (The learning starts when the memory buffer has (BATCH_SIZE * START_LEARNING) entrys)  
 
 The neural networks
 ---
